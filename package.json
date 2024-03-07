@@ -1,0 +1,33 @@
+{
+	"name": "temp_1",
+	"version": "1.0.0",
+	"description": "A simple template repo for webpack",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "webpack serve --open --config webpack.dev.js",
+		"build": "webpack --config webpack.prod.js",
+		"deploy": "git subtree push --prefix dist origin gh-pages"
+	},
+	"keywords": [],
+	"author": "Mohamed Mostafa",
+	"license": "ISC",
+	"devDependencies": {
+		"autoprefixer": "^10.4.18",
+		"css-loader": "^6.10.0",
+		"eslint": "^8.57.0",
+		"eslint-config-prettier": "^9.1.0",
+		"html-webpack-plugin": "^5.6.0",
+		"postcss": "^8.4.35",
+		"postcss-loader": "^8.1.1",
+		"postcss-preset-env": "^9.4.0",
+		"prettier": "^3.2.5",
+		"prettier-plugin-tailwindcss": "^0.5.12",
+		"style-loader": "^3.3.4",
+		"tailwindcss": "^3.4.1",
+		"webpack": "^5.90.3",
+		"webpack-cli": "^5.1.4",
+		"webpack-dev-server": "^5.0.2",
+		"webpack-merge": "^5.10.0"
+	}
+}
