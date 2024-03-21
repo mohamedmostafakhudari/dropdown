@@ -5,6 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <h1 class="text-red-700">Hello</h1>
+    </div>
+    <div class="container mx-auto">
+      <div data-state="idle" class="dropdown w-fit flex flex-col overflow-hidden group">
+        <button
+          class="dropdown__button flex items-center gap-2 font-bold rounded-lg bg-orange-400 p-2 px-4 text-lg text-white duration-200 ease-in-out hover:bg-orange-600 group-data-[state=active]:bg-orange-600 relative z-10 focus:outline-none"
+        >
+          <span>Dropdown</span>
+          <div class="w-[1.5rem]">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <title>chevron-down</title>
+              <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+            </svg>
+          </div>
+        </button>
+        <div class="dropdown__content duration-200 ease-in-out -translate-y-[150%] -mt-2 shadow-md shadow-black/10 rounded-[0.625rem] overflow-hidden group-data-[state=active]:-translate-y-0">
+          <div class="dropdown__item">Item 1</div>
+          <div class="dropdown__item">Item 2</div>
+          <div class="dropdown__item">Item 3</div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
